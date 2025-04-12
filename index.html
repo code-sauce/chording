@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Day Guitar Practice Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load p5.js library with defer attribute -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" defer></script>
+    <!-- Load our script after p5.js libraries -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>30-Day Guitar Journey</h1>
+            <p>15 minutes daily practice: scales, theory, and creativity</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="dashboard">
+                <div class="progress-section">
+                    <h2>Your Progress</h2>
+                    <div class="calendar"></div>
+                    <div class="day-selector">
+                        <button id="prev-day">←</button>
+                        <h3 id="current-day">Day 1</h3>
+                        <button id="next-day">→</button>
+                    </div>
+                </div>
+                
+                <div class="lesson-content">
+                    <h2 id="lesson-title">Loading today's lesson...</h2>
+                    <div id="lesson-description"></div>
+                    <div id="interactive-area"></div>
+                </div>
+            </div>
+            
+            <div class="tools-section">
+                <h2>Practice Tools</h2>
+                <div class="tools-container">
+                    <div class="tool" id="fretboard-visualizer">
+                        <h3>Fretboard Visualizer</h3>
+                        <div id="fretboard-canvas"></div>
+                    </div>
+                    <div class="tool" id="metronome">
+                        <h3>Metronome</h3>
+                        <div id="metronome-controls">
+                            <label for="tempo">Tempo: <span id="tempo-value">80</span> BPM</label>
+                            <input type="range" id="tempo" min="40" max="220" value="80">
+                            <button id="metronome-toggle">Start</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created for self-guided guitar learning | Scale and theory reference included</p>
+        </footer>
+    </div>
+</body>
+</html> 
